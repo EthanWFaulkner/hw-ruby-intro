@@ -4,7 +4,6 @@
 
 def sum arr
   sumval = 0
-  randomstring = "This is a test string"
   arr.each do |val|
     sumval += val
   end
