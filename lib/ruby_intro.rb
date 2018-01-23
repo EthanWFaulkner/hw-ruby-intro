@@ -4,6 +4,7 @@
 
 def sum arr
   sumval = 0
+  randomstring = "This is a test string"
   arr.each do |val|
     sumval += val
   end
@@ -48,14 +49,14 @@ end
 def binary_multiple_of_4? s
   if (/^[0-1]+$/ =~ s)
     dec = s.to_i(2)
-  else 
+  else
     return false
   end
   if (dec % 4 == 0)
     return true
   end
   return false
-    
+
 end
 
 # Part 3
@@ -64,11 +65,11 @@ class BookInStock
   def initialize(isbn, price)
     throw ArgumentError if isbn.empty?
     throw ArgumentError if price <= 0
-      
+
     @isbn = isbn
     @price = price
   end
-  
+
   def isbn=(isbn)
     @isbn = isbn
   end
